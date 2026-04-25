@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bal31k36ejjmd"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Player/proto_controller/proto_controller.tscn" id="1_0bju4"]
+[ext_resource type="Script" uid="uid://bbl5ok05nyq6d" path="res://Player/proto_controller/proto_controller.gd" id="2_t4nej"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n8kpr"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_bsrj8"]
+sky_material = SubResource("ProceduralSkyMaterial_n8kpr")
+
+[sub_resource type="Environment" id="Environment_0bju4"]
+background_mode = 2
+sky = SubResource("Sky_bsrj8")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="LevelTemplate" type="Node3D" unique_id=866513368]
+
+[node name="Enviroment" type="Node" parent="." unique_id=652837666]
+
+[node name="Sun" type="DirectionalLight3D" parent="Enviroment" unique_id=43459238]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Enviroment" unique_id=1718794212]
+environment = SubResource("Environment_0bju4")
+
+[node name="Player" type="Node" parent="." unique_id=207987614]
+
+[node name="ProtoController" parent="Player" unique_id=284608023 instance=ExtResource("1_0bju4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+script = ExtResource("2_t4nej")
+
+[node name="LevelBloxes" type="Node" parent="." unique_id=1519982317]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="LevelBloxes" unique_id=2017905113]
+use_collision = true
+size = Vector3(10, 1, 10)
