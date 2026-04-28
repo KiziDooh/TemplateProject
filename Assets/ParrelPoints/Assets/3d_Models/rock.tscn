@@ -1,0 +1,72 @@
+[gd_scene format=4 uid="uid://pdykdc8awrfk"]
+
+[ext_resource type="Material" path="res://Assets/Materials/silver.tres" id="1_uwjvb"]
+
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_iwah7"]
+_surfaces = [{
+"aabb": AABB(-1.06675, -1.33079, -1.51739, 2.82093, 2.33079, 2.79055),
+"format": 34896613377,
+"index_count": 132,
+"index_data": PackedByteArray("DgADABAADgABAAMAFAARABYAFAANABEAFQAEAAkAFQAPAAQAAgALAAUAAgAHAAsACAAXAAoACAATABcAAAACAAEAAwAFAAQABgAIAAcACQALAAoADAAOAA0ADwARABAAEgAUABMAFQAXABYABgACAAAABgAHAAIAAQAFAAMAAQACAAUABAALAAkABAAFAAsACgAHAAgACgALAAcAEgAIAAYAEgATAAgACQAXABUACQAKABcAFgATABQAFgAXABMADAAUABIADAANABQAFQARAA8AFQAWABEAEAANAA4AEAARAA0AAAAOAAwAAAABAA4ADwADAAQADwAQAAMABgAMABIABgAAAAwA"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("nCI7N/ayAAD0Inldx9UAAAAAKWb7qwAAxyz4u///AABaK/DqddgAAHcJBceI1AAABCcAAD8rAAAOBuMneC8AAAQnjxkAAAAABCf//8hQAAAEJ8HVdi8AAA4Gi9fIUAAAlZEAQXzUAAD8rjN0WdoAAJWR5GjN9QAAY5sm/xnGAAC1mkbXbugAANG96ddUxwAAfpoYJMpPAAAIm49JuC4AALO+ZEu4UgAArcuv3K1dAAD//96mw2IAAK3Ly7RbPAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vdpx5"]
+resource_name = "campfire_Cube_008"
+_surfaces = [{
+"aabb": AABB(-1.06675, -1.33079, -1.51739, 2.82093, 2.33079, 2.79055),
+"attribute_data": PackedByteArray("nyueS58rnkufK55LnyueS55rnwufK/8/nyv/P55r////H55L/x+eS55rX/Sea1/0YJSfC2CUnwtglP//YJT///+fnwtf1J5L/59f9P+fX/RglF/0YJRf9GCUX/RglF/0nytgdJ8rYHSfK2B0nytgdP8fYHT/H2B0nmuey55rnsuea2C0nyv/f58r/3+ea2C0X9RgdP+fYLT/n57L/5+ey2CUYLRglGC0YJT/v2CUYLRglJ7LYJSey2CUnstglJ7LYFSeS2BUnktgVJ5LYFSeS/9fnkuea55LnmueS55rnktgVP8/nmtgNJ5rYDRgVP8//59gNJ6rnkv/n2A0nqueS2CUYDRglGA0YJRgNGCUYDRglP8/YJSeS2CUnktglJ5LYFRgdGBUYHRgVGB0YFRgdJ5rnotgVP9/YFT/f55rnov/X2B0nmtgdJ5rYHSea2B0nqtgdP+fnov/n56LnqtgdGCU/39glGB0YJRgdGCUYHRglJ6LYJSei2CUnotglJ6L"),
+"format": 34896613399,
+"index_count": 132,
+"index_data": PackedByteArray("OgANAEMAOgAEAA0AUwBHAFsAUwA3AEcAVAARACQAVAA9ABEACwAvABcACwAfAC8AIABdACkAIABMAF0AAgAIAAYADgAUABIAGgAiABwAJgAsACoAMQA4ADQAPgBEAEEASgBQAE4AVgBeAFgAGwAJAAMAGwAdAAkABwAWAA8ABwAKABYAEwAtACcAEwAVAC0AKwAeACMAKwAuAB4ASQAhABkASQBNACEAJQBcAFUAJQAoAFwAWQBPAFEAWQBfAE8AMgBSAEsAMgA2AFIAVwBFAD8AVwBaAEUAQgA1ADkAQgBGADUAAQA7ADMAAQAFADsAPAAMABAAPABAAAwAGAAwAEgAGAAAADAA"),
+"material": ExtResource("1_uwjvb"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 96,
+"vertex_data": PackedByteArray("nCI7N/ayJ7ecIjs39rIlopwiOzf2skG0nCI7N/ayxrz0Inldx9VWu/QieV3H1SWi9CJ5XcfVQbT0Inldx9UYvQAAKWb7q0G0AAApZvurcr0AAClm+6tevQAAKWb7q0/Nxyz4u///9cbHLPi7//+zu8cs+Lv//5Kuxyz4u///kb1aK/Dqddifxlor8Op12OH+Wivw6nXYkq5aK/DqddjnwHcJBceI1JKudwkFx4jUncB3CQXHiNTUvXcJBceI1BnLBCcAAD8ra7cEJwAAPyt/2gQnAAA/KxfTBCcAAD8rWb8OBuMneC8X0w4G4yd4L2fADgbjJ3gvWeEOBuMneC+8zwQnjxkAAJb/BCePGQAAhtoEJ48ZAAAX0wQnjxkAAD3hBCf//8hQuPwEJ///yFDw7gQn///IUDDdBCf//8hQ/sEEJ8HVdi/t7gQnwdV2L3j+BCfB1XYvMN0EJ8HVdi/i4A4Gi9fIUDDdDgaL18hQtMEOBovXyFD84A4Gi9fIUL3NlZEAQXzUYLeVkQBBfNRSuZWRAEF81CfClZEAQXzUJaL8rjN0WdpSufyuM3RZ2vG+/K4zdFnaq8H8rjN0WdorvpWR5GjN9VK5lZHkaM31+7+VkeRozfXbu5WR5GjN9SWiY5sm/xnGi8Vjmyb/Gcbi/GObJv8ZxvK/Y5sm/xnGA+m1mkbXbujpxbWaRtdu6PK/tZpG127oLr21mkbXbug2vNG96ddUx/K/0b3p11THdunRvenXVMczvNG96ddUx8S8fpoYJMpPp7d+mhgkyk9f2n6aGCTKT7zbfpoYJMpPnsAIm49JuC4y/gibj0m4LmjaCJuPSbguvNsIm49JuC6K6LO+ZEu4Urzbs75kS7hSB+mzvmRLuFItwLO+ZEu4UjXArcuv3K1dRv+ty6/crV3i7q3Lr9ytXVz6rcuv3K1dP+j//96mw2Jc+v//3qbDYizq///epsNijOj//96mw2ICv63Ly7RbPN/urcvLtFs8+/yty8u0Wzxc+q3Ly7RbPLfpPQnln2EZ/Kw2SXCgwT/foNgJjPZhGfysNklwoDHOe+42SXCgoj9Ln3rOVe4Wy9nYcuJ4HNkJofZH5MXFrc467oLirxxuQJUBR+TFxYfh5LpH5MXFueD7uvHOFu4Gx83aUwojolAFq2JTNSqcUj9Bm1M1KpwrPzqZeMZny//O99ZRuwu5KQW8YlM1KpwPxqfLJr/jABa1mLEe32axXOSUuhy1lLEQwU2zHt9msafEhcwe32axouOoug7FRczQy3/YKgrOobgVXjZuF89AYBn2rLgVXjYNIuIYSRi8QNkfbjG4FV42UiEfGdkJq/ZhGfmstuJgHS6G972yyq8JKDRGEqTiJB2yyq8JVCN3GNgJv/ayyq8J1zObEhIkORiwITExNQv1o+4FbWI2HSFQNxqRQH/C4LHCBX5iNh0hUMEmLUc2HSFQ4iRYSA8bfkBYHcAxO0AGAjS1gbEEtSupszSyEQS1K6mzIPhKfTTsEcwekDE7tXuxGslKqwS1K6laIu5J")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_iwah7")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uwjvb"]
+size = Vector3(0.20117188, 0.1087265, 0.16992188)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l3igw"]
+size = Vector3(0.20117188, 0.1508894, 0.06173706)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wlswb"]
+size = Vector3(0.20117188, 0.21289063, 0.06173706)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bvgvo"]
+size = Vector3(0.20117188, 0.11035156, 0.06173706)
+
+[node name="Node3D" type="Node3D" unique_id=1808362825]
+
+[node name="Rock5" type="MeshInstance3D" parent="." unique_id=1859275419]
+transform = Transform3D(0.1, 0, 0, 0, 0.0919201, -0.0393788, 0, 0.0393788, 0.0919201, 0, 0, 0)
+mesh = SubResource("ArrayMesh_vdpx5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1631542958]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=127178129]
+transform = Transform3D(-0.9880343, -0.14045598, -0.0637208, 0.15423346, -0.89848197, -0.41102663, 0.0004791543, -0.4159364, 0.9093935, 0.0041167606, 0.02967343, 0.005152465)
+shape = SubResource("BoxShape3D_uwjvb")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=297997166]
+transform = Transform3D(-0.96333075, 0.25700694, -0.07707798, -0.1288723, -0.695148, -0.7072207, -0.23534131, -0.6713545, 0.70277846, 0.017485594, 0.0091727525, -0.09213315)
+shape = SubResource("BoxShape3D_l3igw")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D" unique_id=1713167586]
+transform = Transform3D(-0.97224134, -0.18920814, -0.13764688, -0.11384926, -0.13139853, 0.98477024, -0.20441315, 0.97310567, 0.10620989, 0.017485594, -0.054143175, -0.018385798)
+shape = SubResource("BoxShape3D_wlswb")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D" unique_id=150176174]
+transform = Transform3D(-0.95336694, -0.13527347, 0.26980054, -0.03243368, 0.93467426, 0.35402215, -0.30006537, 0.32876247, -0.8954751, 0.0016611423, -0.017122105, 0.08575185)
+shape = SubResource("BoxShape3D_bvgvo")

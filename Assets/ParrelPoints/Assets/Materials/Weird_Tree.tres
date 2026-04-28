@@ -1,0 +1,37 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://fw37153sly6f"]
+
+[ext_resource type="Shader" path="res://Assets/Materials/stylized.gdshader" id="1_pa6af"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fyi7y"]
+render_priority = 0
+shader = ExtResource("1_pa6af")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_affect = 0.0
+shader_parameter/use_stepped = true
+shader_parameter/steps = 3.0
+shader_parameter/step_smoothness = 0.0
+shader_parameter/shadow_tint = Color(0.7882353, 0.21176471, 0.45882353, 1)
+shader_parameter/shadow_tint_amount = 0.30000000447036
+shader_parameter/specular = 1.0
+shader_parameter/normal_strength = 0.0
+shader_parameter/use_rim = true
+shader_parameter/rim_color = Color(1, 1, 1, 1)
+shader_parameter/rim_amount = 2.0
+shader_parameter/rim_smoothness = 0.2
+shader_parameter/rim_mask_shadow = 0.0
+shader_parameter/rim_blend = 1.0
+shader_parameter/use_pattern = true
+shader_parameter/pattern_uv_mode = 2
+shader_parameter/pattern_tiling = 32.0
+shader_parameter/pattern_amount = 0.5
+shader_parameter/pattern_smoothness = 0.5
+shader_parameter/pattern_blend = 0.2
+
+[resource]
+render_priority = 1
+next_pass = SubResource("ShaderMaterial_fyi7y")
+transparency = 1
+depth_test = 1
+albedo_color = Color(0.7892864, 0.2132451, 0.45720798, 1)
+stencil_mode = 3
+stencil_flags = 1

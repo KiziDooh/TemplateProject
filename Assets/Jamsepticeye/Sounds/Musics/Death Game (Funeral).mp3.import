@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ck7yvkv434kx"
+path="res://.godot/imported/Death Game (Funeral).mp3-fc444079cf1346a8ef4b3992e2f250a5.mp3str"
+
+[deps]
+
+source_file="res://Assets/Jamsepticeye/Sounds/Musics/Death Game (Funeral).mp3"
+dest_files=["res://.godot/imported/Death Game (Funeral).mp3-fc444079cf1346a8ef4b3992e2f250a5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

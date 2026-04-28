@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://duxx3j0uw8n4s"]
+
+[ext_resource type="Texture2D" uid="uid://cb8dfs551qnqy" path="res://Assets/Resources/Images/rock_embedded_concrete_wall_disp_4k.png" id="1_y83vs"]
+[ext_resource type="Texture2D" uid="uid://o7180i8vl0wb" path="res://Assets/Resources/Images/rock_embedded_concrete_wall_diff_4k.jpg" id="2_8515j"]
+[ext_resource type="Texture2D" uid="uid://wsm3jlew32u4" path="res://Assets/Resources/Images/rock_embedded_concrete_wall_nor_gl_4k.png" id="3_exjo2"]
+[ext_resource type="Texture2D" uid="uid://vuc4chmikdoe" path="res://Assets/Resources/Images/rock_embedded_concrete_wall_rough_4k.png" id="4_wia03"]
+
+[resource]
+albedo_color = Color(0.519592, 0, 0.0223978, 1)
+albedo_texture = ExtResource("1_y83vs")
+albedo_texture_force_srgb = true
+roughness = 0.35
+roughness_texture = ExtResource("4_wia03")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_scale = 6.1
+normal_texture = ExtResource("3_exjo2")
+detail_mask = ExtResource("2_8515j")
+detail_blend_mode = 3
