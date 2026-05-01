@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Curtain" format=3 uid="uid://5gn7vaaf04s5"]
+
+[ext_resource type="AudioStream" uid="uid://cqqe8ow61peyy" path="res://MeVoice/Mom.mp3" id="1_5nysm"]
+[ext_resource type="Script" uid="uid://bpaxtrrytacyn" path="res://Scripts/CurtainResource.gd" id="1_u20jc"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_u20jc")
+RayName = "11"
+Song = ExtResource("1_5nysm")
+metadata/_custom_type_script = "uid://bpaxtrrytacyn"

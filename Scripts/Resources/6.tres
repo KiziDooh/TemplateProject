@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Curtain" format=3 uid="uid://btwrgoob0eeim"]
+
+[ext_resource type="Script" uid="uid://bpaxtrrytacyn" path="res://Scripts/CurtainResource.gd" id="1_5nrw7"]
+[ext_resource type="AudioStream" uid="uid://ibaabssfmoi7" path="res://MeVoice/Bowling.mp3" id="1_a1bm8"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_5nrw7")
+RayName = "6"
+Song = ExtResource("1_a1bm8")
+metadata/_custom_type_script = "uid://bpaxtrrytacyn"

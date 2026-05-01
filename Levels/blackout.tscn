@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://81nkxw6x8kh3"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Player/proto_controller/proto_controller.tscn" id="1_0amq7"]
+[ext_resource type="Script" uid="uid://ckxljqcocesa0" path="res://Scripts/blackout.gd" id="1_7e1r4"]
+[ext_resource type="PackedScene" uid="uid://cya4sqw32xyui" path="res://RealAssets/Models/the_final.tscn" id="2_kowxy"]
+[ext_resource type="AudioStream" uid="uid://d8uh3ynagmy" path="res://RealAssets/Audio/mixkit-hard-typewriter-click-1119.mp3" id="3_aba1i"]
+[ext_resource type="AudioStream" uid="uid://ccrxi2487vrnd" path="res://RealAssets/Audio/mixkit-typewriter-soft-click-1125.mp3" id="5_vqi4s"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kowxy"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Sky" id="Sky_aba1i"]
+sky_material = SubResource("ProceduralSkyMaterial_kowxy")
+
+[sub_resource type="Environment" id="Environment_7e1r4"]
+background_mode = 2
+sky = SubResource("Sky_aba1i")
+tonemap_mode = 2
+glow_intensity = 8.0
+glow_strength = 0.89
+glow_bloom = 1.0
+fog_mode = 1
+fog_light_color = Color(0, 0, 0, 1)
+fog_light_energy = 6.92
+fog_sun_scatter = 0.68
+fog_density = 1.0
+fog_height = 8.6
+fog_height_density = 2.4202
+adjustment_enabled = true
+adjustment_brightness = 1.53
+adjustment_contrast = 1.25
+adjustment_saturation = 0.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7e1r4"]
+radius = 5.8620977
+
+[node name="Blackout" type="Node3D" unique_id=730234334]
+script = ExtResource("1_7e1r4")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=721993073]
+environment = SubResource("Environment_7e1r4")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=846741307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.5, 0, 0)
+use_collision = true
+size = Vector3(424, 1, 616)
+
+[node name="Player" type="Node" parent="CSGBox3D" unique_id=1111870946]
+
+[node name="ProtoController" parent="CSGBox3D/Player" unique_id=1368308255 instance=ExtResource("1_0amq7")]
+transform = Transform3D(-4.371138e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.371138e-08, -57.188988, 0.5, -1.0767822)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="CSGBox3D" unique_id=823667922]
+transform = Transform3D(1, 0, 0, 0, 0.062041543, 0.9980736, 0, -0.9980736, 0.062041543, -165.89821, 25.635675, 0)
+visible = false
+spot_range = 40.0
+spot_angle = 34.331818
+
+[node name="THE FINAL" parent="." unique_id=325075378 instance=ExtResource("2_kowxy")]
+transform = Transform3D(-3.642614e-06, 83.3333, -48.112507, 2.1030642e-06, -48.112507, -83.3333, -96.22499, -4.206128e-06, 2.4010595e-13, -660, 304, 231)
+visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1023815529]
+stream = ExtResource("3_aba1i")
+
+[node name="Timer" type="Timer" parent="." unique_id=1065027236]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1873716101]
+transform = Transform3D(1, 0, 0, 0, 0.062041543, 0.9980736, 0, -0.9980736, 0.062041543, -86.39821, 1.3447266, 0)
+collision_layer = 128
+collision_mask = 128
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1611706544]
+shape = SubResource("SphereShape3D_7e1r4")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=929578039]
+stream = ExtResource("5_vqi4s")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area3D" to="CSGBox3D/Player/ProtoController" method="_on_area_3d_body_entered"]

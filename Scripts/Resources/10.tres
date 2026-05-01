@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Curtain" format=3 uid="uid://pg0uu1xt8ojm"]
+
+[ext_resource type="AudioStream" uid="uid://24e34a0xix4l" path="res://MeVoice/HiddenGarden.mp3" id="1_7757i"]
+[ext_resource type="Script" uid="uid://bpaxtrrytacyn" path="res://Scripts/CurtainResource.gd" id="1_npscr"]
+
+[resource]
+script = ExtResource("1_npscr")
+RayName = "10"
+Song = ExtResource("1_7757i")
+metadata/_custom_type_script = "uid://bpaxtrrytacyn"

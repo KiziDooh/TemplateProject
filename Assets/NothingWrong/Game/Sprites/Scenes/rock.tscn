@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=4 uid="uid://cu7j6m8smld4s"]
+[gd_scene format=4 uid="uid://cu7j6m8smld4s"]
 
-[ext_resource type="Material" uid="uid://fajnspsc36qu" path="res://Game/Material/rockText.tres" id="1_0b63v"]
+[ext_resource type="Material" uid="uid://fajnspsc36qu" path="res://RealAssets/Materials/rockText.tres" id="1_0b63v"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iwjiw"]
 resource_name = "Material.001"
@@ -40,10 +40,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_iwah7")
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=870739974]
 
-[node name="Rock5" type="MeshInstance3D" parent="."]
+[node name="Rock5" type="MeshInstance3D" parent="." unique_id=1078341364]
 transform = Transform3D(0.1, 0, 0, 0, 0.0919201, -0.0393788, 0, 0.0393788, 0.0919201, 0, 0, 0)
 material_override = ExtResource("1_0b63v")
 mesh = SubResource("ArrayMesh_vdpx5")
-skeleton = NodePath("")

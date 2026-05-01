@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bs72ogkvdd7d6"]
+[gd_scene format=3 uid="uid://bs72ogkvdd7d6"]
 
-[ext_resource type="Script" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="Script" uid="uid://bbl5ok05nyq6d" path="res://Player/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="Texture2D" uid="uid://b43ei8rftuj6i" path="res://Assets/NothingWrong/Game/UI/Images/EKeyInteract.png" id="2_k8ixi"]
+[ext_resource type="Script" uid="uid://dwkhwq56cb4w" path="res://Scripts/ray_cast_3d.gd" id="2_n44g4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -13,20 +15,36 @@ height = 1.8
 radius = 0.4
 height = 1.8
 
-[node name="ProtoController" type="CharacterBody3D"]
+[node name="ProtoController" type="CharacterBody3D" unique_id=1368308255]
+collision_layer = 129
+collision_mask = 129
 script = ExtResource("1_ucva2")
 
-[node name="Mesh" type="MeshInstance3D" parent="."]
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=2007396240]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 material_override = SubResource("StandardMaterial3D_iof21")
 cast_shadow = 0
 mesh = SubResource("CapsuleMesh_ucva2")
 
-[node name="Collider" type="CollisionShape3D" parent="."]
+[node name="Collider" type="CollisionShape3D" parent="." unique_id=2005079364]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 shape = SubResource("CapsuleShape3D_iof21")
 
-[node name="Head" type="Node3D" parent="."]
+[node name="Head" type="Node3D" parent="." unique_id=5379977]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 
-[node name="Camera3D" type="Camera3D" parent="Head"]
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=2131854916]
+
+[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D" unique_id=1143758695]
+target_position = Vector3(0, 0, -6.9)
+collide_with_areas = true
+collide_with_bodies = false
+script = ExtResource("2_n44g4")
+
+[node name="EKeyInteract" type="Sprite2D" parent="." unique_id=7538886]
+visible = false
+light_mask = 16
+visibility_layer = 16
+position = Vector2(97, 67)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("2_k8ixi")

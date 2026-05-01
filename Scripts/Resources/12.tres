@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Curtain" format=3 uid="uid://exdjg5qb5al4"]
+
+[ext_resource type="AudioStream" uid="uid://bhsx502vc1cxy" path="res://MeVoice/Roomate.mp3" id="1_1kgo7"]
+[ext_resource type="Script" uid="uid://bpaxtrrytacyn" path="res://Scripts/CurtainResource.gd" id="1_1p5i0"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_1p5i0")
+RayName = "12"
+Song = ExtResource("1_1kgo7")
+metadata/_custom_type_script = "uid://bpaxtrrytacyn"

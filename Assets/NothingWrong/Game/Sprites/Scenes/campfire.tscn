@@ -1,8 +1,9 @@
-[gd_scene load_steps=58 format=4 uid="uid://we54u8qnqh5x"]
+[gd_scene format=4 uid="uid://we54u8qnqh5x"]
 
-[ext_resource type="Material" uid="uid://fajnspsc36qu" path="res://Game/Material/rockText.tres" id="1_caclm"]
+[ext_resource type="Material" uid="uid://fajnspsc36qu" path="res://RealAssets/Materials/rockText.tres" id="1_caclm"]
 [ext_resource type="Script" path="res://Game/Sprites/Scenes/campfire.gd" id="1_n4h0u"]
-[ext_resource type="Material" uid="uid://sn11sbkwad3n" path="res://Game/Material/stumpidtext.tres" id="2_pc7mc"]
+[ext_resource type="Material" uid="uid://sn11sbkwad3n" path="res://Assets/NothingWrong/Game/Material/stumpidtext.tres" id="2_pc7mc"]
+
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iwjiw"]
 resource_name = "Material.001"
