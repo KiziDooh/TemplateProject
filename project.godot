@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="TemplateProject"
+config/name="FinalProject"
 run/main_scene="uid://81nkxw6x8kh3"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Assets/icon.svg"
@@ -18,6 +18,10 @@ config/icon="res://Assets/icon.svg"
 [autoload]
 
 Global="*uid://babxn0re3t267"
+
+[display]
+
+window/stretch/mode="viewport"
 
 [input]
 

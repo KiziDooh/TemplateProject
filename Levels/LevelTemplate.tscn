@@ -8,39 +8,24 @@
 [ext_resource type="Script" uid="uid://bpaxtrrytacyn" path="res://Scripts/CurtainResource.gd" id="3_t4nej"]
 [ext_resource type="Texture2D" uid="uid://duu1b5m7vln5c" path="res://Player/BLINK/frame0001.png" id="4_534mx"]
 [ext_resource type="PackedScene" uid="uid://dynryb2ayj8n6" path="res://Assets/ParrelPoints/Assets/3d_Models/Weird_Tree.tscn" id="4_ersrp"]
-[ext_resource type="Texture2D" uid="uid://c7vmsoqhjo6gw" path="res://Images/20260429_144503.jpg" id="5_nlnvj"]
 [ext_resource type="Texture2D" uid="uid://brp2llr8ny0e3" path="res://Player/BLINK/frame0002.png" id="5_xs4ae"]
 [ext_resource type="PackedScene" uid="uid://pdykdc8awrfk" path="res://RealAssets/Models/rock.tscn" id="6_6ghb1"]
 [ext_resource type="Texture2D" uid="uid://moreoqb2xdp" path="res://Player/BLINK/frame0003.png" id="6_bhw26"]
-[ext_resource type="Texture2D" uid="uid://di380kc50u4dw" path="res://Images/20260429_140733.jpg" id="7_au3ii"]
 [ext_resource type="Texture2D" uid="uid://blwtaukhlvu15" path="res://Player/BLINK/frame0004.png" id="7_x0r5k"]
 [ext_resource type="Texture2D" uid="uid://5aafqoml1xk6" path="res://Player/BLINK/frame0005.png" id="8_gq483"]
-[ext_resource type="Texture2D" uid="uid://blp2r8m1eevut" path="res://Images/20260429_154710.jpg" id="8_rkqb5"]
-[ext_resource type="Texture2D" uid="uid://beap1dhb2hcv8" path="res://Images/20260429_154955.jpg" id="9_2sd0y"]
 [ext_resource type="Texture2D" uid="uid://wj3u028s4ipf" path="res://Player/BLINK/frame0006.png" id="9_a237y"]
-[ext_resource type="Texture2D" uid="uid://c7sovrhgpsill" path="res://Images/20260429_150818.jpg" id="9_kvwtm"]
-[ext_resource type="Texture2D" uid="uid://dm5ehsfvusmoa" path="res://Images/20260429_150110.jpg" id="10_2sd0y"]
 [ext_resource type="Texture2D" uid="uid://cby6j3lqw1ynq" path="res://Player/BLINK/frame0007.png" id="10_brwo5"]
 [ext_resource type="Texture2D" uid="uid://b5jg5aq8ynvfe" path="res://Player/BLINK/frame0008.png" id="11_ndej1"]
-[ext_resource type="Texture2D" uid="uid://mi7epqm1wsos" path="res://Images/20260429_144642.jpg" id="11_yt52h"]
-[ext_resource type="Texture2D" uid="uid://dxkpphfgs7kdj" path="res://Images/20260429_145936.jpg" id="12_7y015"]
 [ext_resource type="Texture2D" uid="uid://k4l431n5di2i" path="res://Player/BLINK/frame0009.png" id="12_hiqw0"]
 [ext_resource type="Resource" uid="uid://pg0uu1xt8ojm" path="res://Scripts/Resources/10.tres" id="13_7y015"]
-[ext_resource type="Texture2D" uid="uid://bonpjlv3i1dev" path="res://Images/20260429_145636.jpg" id="13_iffji"]
 [ext_resource type="Texture2D" uid="uid://flc8medqalxf" path="res://Player/BLINK/frame0010.png" id="13_mg0vw"]
 [ext_resource type="Texture2D" uid="uid://cx44x74t2jvmk" path="res://Player/BLINK/frame0011.png" id="14_mwh5d"]
 [ext_resource type="Texture2D" uid="uid://c3adc168eknjw" path="res://Player/BLINK/frame0012.png" id="15_1e4oe"]
-[ext_resource type="Texture2D" uid="uid://bhj7t42qmngs4" path="res://Images/20260429_145151.jpg" id="15_3nt0q"]
 [ext_resource type="Texture2D" uid="uid://dwgobhfw1t3pk" path="res://Player/BLINK/frame0013.png" id="16_shoev"]
 [ext_resource type="Texture2D" uid="uid://bn6bibwjdyuy2" path="res://Player/BLINK/frame0014.png" id="17_p2jcx"]
-[ext_resource type="Texture2D" uid="uid://ysnya8r4v0sa" path="res://Images/FB_IMG_1777541488810.jpg" id="17_yt52h"]
-[ext_resource type="Texture2D" uid="uid://dd836mmsbf8k5" path="res://Images/Resized_20260416_140945.jpg" id="18_7y015"]
 [ext_resource type="Texture2D" uid="uid://bi3csbhokili5" path="res://Player/BLINK/frame0015.png" id="18_8xddf"]
 [ext_resource type="Texture2D" uid="uid://d0hlpkxgl7c43" path="res://Player/BLINK/frame0016.png" id="19_1hxp1"]
-[ext_resource type="Texture2D" uid="uid://nv78e7t4147q" path="res://Images/20260429_154949.jpg" id="19_7y015"]
-[ext_resource type="Texture2D" uid="uid://dy56u85kaektt" path="res://Images/20260429_154920.jpg" id="20_iffji"]
 [ext_resource type="Texture2D" uid="uid://qlg7awghpron" path="res://Player/BLINK/frame0017.png" id="20_ndtvl"]
-[ext_resource type="Texture2D" uid="uid://cn2te2s31r30y" path="res://Images/20260429_154727.jpg" id="21_3nt0q"]
 [ext_resource type="Texture2D" uid="uid://drqb8ysjkmcde" path="res://Player/BLINK/frame0018.png" id="21_xnqfd"]
 [ext_resource type="Texture2D" uid="uid://drffryp3aakx7" path="res://Player/BLINK/frame0019.png" id="22_tfayi"]
 [ext_resource type="Texture2D" uid="uid://g278ovatqaid" path="res://Player/BLINK/frame0020.png" id="23_o1hqr"]
@@ -318,7 +303,7 @@ animations = [{
 "speed": 26.0
 }]
 
-[sub_resource type="Resource" id="Resource_o1hqr"]
+[sub_resource type="Resource" id="Resource_rg8ib"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "1"
@@ -328,122 +313,167 @@ metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 [sub_resource type="SphereShape3D" id="SphereShape3D_vjhoh"]
 radius = 4.0288634
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tgedf"]
+load_path = "res://.godot/imported/20260429_144503.jpg-3087c54f28a1410b1fb509eee213aef8.s3tc.ctex"
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o472r"]
-albedo_texture = ExtResource("5_nlnvj")
+albedo_texture = SubResource("CompressedTexture2D_tgedf")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_g8k58"]
 
-[sub_resource type="Resource" id="Resource_yr28d"]
+[sub_resource type="Resource" id="Resource_b0tux"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "2"
 Song = ExtResource("34_534mx")
 metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gmmmr"]
-albedo_texture = ExtResource("7_au3ii")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0i0nv"]
+load_path = "res://.godot/imported/20260429_140733.jpg-e2e40dadbf1aff40f4d17ad00d5aa165.s3tc.ctex"
 
-[sub_resource type="Resource" id="Resource_p05p5"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gmmmr"]
+albedo_texture = SubResource("CompressedTexture2D_0i0nv")
+
+[sub_resource type="Resource" id="Resource_cr5eg"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "3"
 Song = ExtResource("37_mwh5d")
 metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8qnib"]
-albedo_texture = ExtResource("8_rkqb5")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dwen6"]
+load_path = "res://.godot/imported/20260429_154710.jpg-e6a3e17522c95d0a346c8b6d0cee3d35.s3tc.ctex"
 
-[sub_resource type="Resource" id="Resource_o8w5c"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8qnib"]
+albedo_texture = SubResource("CompressedTexture2D_dwen6")
+
+[sub_resource type="Resource" id="Resource_534mx"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "4"
 Song = ExtResource("39_1e4oe")
 metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cmlwn"]
-albedo_texture = ExtResource("9_2sd0y")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xs4ae"]
+load_path = "res://.godot/imported/20260429_154955.jpg-dd9f09ff205afe7576b00fe2604c9199.s3tc.ctex"
 
-[sub_resource type="Resource" id="Resource_lou1o"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cmlwn"]
+albedo_texture = SubResource("CompressedTexture2D_xs4ae")
+
+[sub_resource type="Resource" id="Resource_bhw26"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "5"
 Song = ExtResource("41_shoev")
 metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5fua"]
-albedo_texture = ExtResource("9_kvwtm")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x0r5k"]
+load_path = "res://.godot/imported/20260429_150818.jpg-2688c2fe44b8b068badbc72f3f6f9141.s3tc.ctex"
 
-[sub_resource type="Resource" id="Resource_u4kvb"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5fua"]
+albedo_texture = SubResource("CompressedTexture2D_x0r5k")
+
+[sub_resource type="Resource" id="Resource_gq483"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "6"
 Song = ExtResource("43_p2jcx")
 metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2d7s"]
-albedo_texture = ExtResource("10_2sd0y")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a237y"]
+load_path = "res://.godot/imported/20260429_150110.jpg-3b0ec32fc5c61f410b766624814e78cc.s3tc.ctex"
 
-[sub_resource type="Resource" id="Resource_0kinc"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2d7s"]
+albedo_texture = SubResource("CompressedTexture2D_a237y")
+
+[sub_resource type="Resource" id="Resource_brwo5"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "7"
 Song = ExtResource("45_8xddf")
 metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o0q0o"]
-albedo_texture = ExtResource("11_yt52h")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ndej1"]
+load_path = "res://.godot/imported/20260429_144642.jpg-74213b1556ecc932894cc07d053a6c03.s3tc.ctex"
 
-[sub_resource type="Resource" id="Resource_8fmfc"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o0q0o"]
+albedo_texture = SubResource("CompressedTexture2D_ndej1")
+
+[sub_resource type="Resource" id="Resource_hiqw0"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "8"
 Song = ExtResource("47_1hxp1")
 metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i0hnh"]
-albedo_texture = ExtResource("12_7y015")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mg0vw"]
+load_path = "res://.godot/imported/20260429_145936.jpg-df5c424cf30e0be8a709daba6241078c.s3tc.ctex"
 
-[sub_resource type="Resource" id="Resource_o620u"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i0hnh"]
+albedo_texture = SubResource("CompressedTexture2D_mg0vw")
+
+[sub_resource type="Resource" id="Resource_mwh5d"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "9"
 Song = ExtResource("49_ndtvl")
 metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1e4oe"]
+load_path = "res://.godot/imported/20260429_145636.jpg-35960919b6fc4cc212fc1902426c3fc5.s3tc.ctex"
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kq0ho"]
-albedo_texture = ExtResource("13_iffji")
+albedo_texture = SubResource("CompressedTexture2D_1e4oe")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_shoev"]
+load_path = "res://.godot/imported/20260429_145151.jpg-77623eed1c0e2aaa1e775c897eb168ad.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_007c8"]
-albedo_texture = ExtResource("15_3nt0q")
+albedo_texture = SubResource("CompressedTexture2D_shoev")
 
-[sub_resource type="Resource" id="Resource_rbumi"]
+[sub_resource type="Resource" id="Resource_p2jcx"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "11"
 Song = ExtResource("53_xnqfd")
 metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_toho8"]
-albedo_texture = ExtResource("17_yt52h")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8xddf"]
+load_path = "res://.godot/imported/FB_IMG_1777541488810.jpg-4c6ec1f12f902a5b283152de35281da8.s3tc.ctex"
 
-[sub_resource type="Resource" id="Resource_pf48c"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_toho8"]
+albedo_texture = SubResource("CompressedTexture2D_8xddf")
+
+[sub_resource type="Resource" id="Resource_1hxp1"]
 resource_local_to_scene = true
 script = ExtResource("3_t4nej")
 RayName = "12"
 Song = ExtResource("55_tfayi")
 metadata/_custom_type_script = "uid://bpaxtrrytacyn"
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ndtvl"]
+load_path = "res://.godot/imported/Resized_20260416_140945.jpg-32f32608cb1aad89413daf631a47d6fe.s3tc.ctex"
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a7crv"]
-albedo_texture = ExtResource("18_7y015")
+albedo_texture = SubResource("CompressedTexture2D_ndtvl")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xnqfd"]
+load_path = "res://.godot/imported/20260429_154949.jpg-67819353e2dcc765399bd57664741a80.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c6bgd"]
-albedo_texture = ExtResource("19_7y015")
+albedo_texture = SubResource("CompressedTexture2D_xnqfd")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tfayi"]
+load_path = "res://.godot/imported/20260429_154920.jpg-45277868ae082dd16663bae76b7fc50b.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6vh4a"]
-albedo_texture = ExtResource("20_iffji")
+albedo_texture = SubResource("CompressedTexture2D_tfayi")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o1hqr"]
+load_path = "res://.godot/imported/20260429_154727.jpg-d3d48c091875fc720a10fa5a3ff72ae2.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w8wrq"]
-albedo_texture = ExtResource("21_3nt0q")
+albedo_texture = SubResource("CompressedTexture2D_o1hqr")
 
 [node name="LevelTemplate" type="Node3D" unique_id=866513368]
 
@@ -518,7 +548,7 @@ size = Vector3(49.099854, 1, 66)
 
 [node name="CurtainCall" parent="Level/Curtains" unique_id=1705002300 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -10.204083)
-raynam = SubResource("Resource_o1hqr")
+raynam = SubResource("Resource_rg8ib")
 
 [node name="1" type="Area3D" parent="Level/Curtains/CurtainCall" unique_id=982439357]
 
@@ -533,7 +563,7 @@ mesh = SubResource("PlaneMesh_g8k58")
 
 [node name="CurtainCall2" parent="Level/Curtains" unique_id=440437998 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 2.2250175)
-raynam = SubResource("Resource_yr28d")
+raynam = SubResource("Resource_b0tux")
 
 [node name="2" type="Area3D" parent="Level/Curtains/CurtainCall2" unique_id=1706101891]
 
@@ -548,7 +578,7 @@ mesh = SubResource("PlaneMesh_g8k58")
 
 [node name="CurtainCall3" parent="Level/Curtains" unique_id=864425293 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 15.3553505)
-raynam = SubResource("Resource_p05p5")
+raynam = SubResource("Resource_cr5eg")
 
 [node name="3" type="Area3D" parent="Level/Curtains/CurtainCall3" unique_id=589171945]
 
@@ -563,7 +593,7 @@ mesh = SubResource("PlaneMesh_g8k58")
 
 [node name="CurtainCall4" parent="Level/Curtains" unique_id=390788609 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, -33.837044, 0.5, 15.3553505)
-raynam = SubResource("Resource_o8w5c")
+raynam = SubResource("Resource_534mx")
 
 [node name="4" type="Area3D" parent="Level/Curtains/CurtainCall4" unique_id=1047636295]
 
@@ -578,7 +608,7 @@ mesh = SubResource("PlaneMesh_g8k58")
 
 [node name="CurtainCall5" parent="Level/Curtains" unique_id=92200386 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(-0.9999999, 0, 8.742276e-08, 0, 1, 0, -8.742276e-08, 0, -0.9999999, -33.837044, 0.5, 0.57008743)
-raynam = SubResource("Resource_lou1o")
+raynam = SubResource("Resource_bhw26")
 
 [node name="5" type="Area3D" parent="Level/Curtains/CurtainCall5" unique_id=1567628438]
 
@@ -593,7 +623,7 @@ mesh = SubResource("PlaneMesh_g8k58")
 
 [node name="CurtainCall6" parent="Level/Curtains" unique_id=411597143 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, -33.837044, 0.5, -10.903981)
-raynam = SubResource("Resource_u4kvb")
+raynam = SubResource("Resource_gq483")
 
 [node name="6" type="Area3D" parent="Level/Curtains/CurtainCall6" unique_id=1043012466]
 
@@ -608,7 +638,7 @@ mesh = SubResource("PlaneMesh_g8k58")
 
 [node name="CurtainCall7" parent="Level/Curtains" unique_id=431553843 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -25.008572)
-raynam = SubResource("Resource_0kinc")
+raynam = SubResource("Resource_brwo5")
 
 [node name="7" type="Area3D" parent="Level/Curtains/CurtainCall7" unique_id=911966946]
 
@@ -623,7 +653,7 @@ mesh = SubResource("PlaneMesh_g8k58")
 
 [node name="CurtainCall8" parent="Level/Curtains" unique_id=779967226 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, -33.837044, 0.5, -25.70847)
-raynam = SubResource("Resource_8fmfc")
+raynam = SubResource("Resource_hiqw0")
 
 [node name="8" type="Area3D" parent="Level/Curtains/CurtainCall8" unique_id=14313597]
 
@@ -638,7 +668,7 @@ mesh = SubResource("PlaneMesh_g8k58")
 
 [node name="CurtainCall9" parent="Level/Curtains" unique_id=1174541057 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(-4.3711385e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.3711385e-08, -24.170456, 0.5, -33.101547)
-raynam = SubResource("Resource_o620u")
+raynam = SubResource("Resource_mwh5d")
 
 [node name="9" type="Area3D" parent="Level/Curtains/CurtainCall9" unique_id=530509318]
 
@@ -668,7 +698,7 @@ mesh = SubResource("PlaneMesh_g8k58")
 
 [node name="CurtainCall11" parent="Level/Curtains" unique_id=1199399423 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -9, 0.5, 20.795918)
-raynam = SubResource("Resource_rbumi")
+raynam = SubResource("Resource_p2jcx")
 
 [node name="11" type="Area3D" parent="Level/Curtains/CurtainCall11" unique_id=1701556119]
 
@@ -683,7 +713,7 @@ mesh = SubResource("PlaneMesh_g8k58")
 
 [node name="CurtainCall12" parent="Level/Curtains" unique_id=1561923808 instance=ExtResource("3_kv2lc")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -25, 0.5, 20.795918)
-raynam = SubResource("Resource_pf48c")
+raynam = SubResource("Resource_1hxp1")
 
 [node name="12" type="Area3D" parent="Level/Curtains/CurtainCall12" unique_id=121652871]
 
