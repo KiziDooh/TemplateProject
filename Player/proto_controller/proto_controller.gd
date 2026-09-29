@@ -5,6 +5,9 @@
 
 extends CharacterBody3D
 
+@export var WhereGoWhenDie = [0,0,0.5]
+var deathbuffer = false
+var winbuffer = false
 ## Can we move around?
 @export var can_move : bool = true
 ## Are we affected by gravity?
@@ -176,3 +179,23 @@ func check_input_mappings():
 	if can_freefly and not InputMap.has_action(input_freefly):
 		push_error("Freefly disabled. No InputAction found for input_freefly: " + input_freefly)
 		can_freefly = false
+
+
+
+
+func _on_area_3d_2_body_entered(body: Node3D) -> void:
+	if winbuffer == true:
+		print("You Win!")
+	elif winbuffer == false:
+		winbuffer = true
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	if deathbuffer == true:
+		print("You Die.")
+		$".".position.x = WhereGoWhenDie[0]
+		$".".position.y = WhereGoWhenDie[1]
+		$".".position.z = WhereGoWhenDie[2]
+		$AudioStreamPlayer.play()
+		$AudioStreamPlayer2.play()
+	elif deathbuffer == false:
+		deathbuffer = true

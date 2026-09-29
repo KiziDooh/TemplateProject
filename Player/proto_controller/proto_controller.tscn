@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://bs72ogkvdd7d6"]
 
 [ext_resource type="Script" uid="uid://bbl5ok05nyq6d" path="res://Player/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="AudioStream" uid="uid://j6vdaycb1b2e" path="res://Assets/Audio/SFX/VOXScrm_Wilhelm scream (ID 0477)_BigSoundBank.com.wav" id="2_k8ixi"]
+[ext_resource type="AudioStream" uid="uid://5kbdl2gius0k" path="res://Assets/Audio/SFX/edimar_ramide-death2-340040.mp3" id="3_x8a7t"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -13,20 +15,27 @@ height = 1.8
 radius = 0.4
 height = 1.8
 
-[node name="ProtoController" type="CharacterBody3D"]
+[node name="ProtoController" type="CharacterBody3D" unique_id=1204260225]
 script = ExtResource("1_ucva2")
 
-[node name="Mesh" type="MeshInstance3D" parent="."]
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=1931606168]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 material_override = SubResource("StandardMaterial3D_iof21")
 cast_shadow = 0
 mesh = SubResource("CapsuleMesh_ucva2")
 
-[node name="Collider" type="CollisionShape3D" parent="."]
+[node name="Collider" type="CollisionShape3D" parent="." unique_id=54146965]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 shape = SubResource("CapsuleShape3D_iof21")
 
-[node name="Head" type="Node3D" parent="."]
+[node name="Head" type="Node3D" parent="." unique_id=582662096]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 
-[node name="Camera3D" type="Camera3D" parent="Head"]
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=174183173]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=919760305]
+stream = ExtResource("2_k8ixi")
+volume_db = -4.752
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=1846177523]
+stream = ExtResource("3_x8a7t")
