@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bbl5ok05nyq6d" path="res://Player/proto_controller/proto_controller.gd" id="1_ucva2"]
 [ext_resource type="AudioStream" uid="uid://j6vdaycb1b2e" path="res://Assets/Audio/SFX/VOXScrm_Wilhelm scream (ID 0477)_BigSoundBank.com.wav" id="2_k8ixi"]
 [ext_resource type="AudioStream" uid="uid://5kbdl2gius0k" path="res://Assets/Audio/SFX/edimar_ramide-death2-340040.mp3" id="3_x8a7t"]
+[ext_resource type="AudioStream" uid="uid://h0ahxcwbuxhu" path="res://Assets/Audio/SFX/yippeeeeeeeeeeeeee.mp3" id="4_x8a7t"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -39,3 +40,6 @@ volume_db = -4.752
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=1846177523]
 stream = ExtResource("3_x8a7t")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="." unique_id=2099252925]
+stream = ExtResource("4_x8a7t")

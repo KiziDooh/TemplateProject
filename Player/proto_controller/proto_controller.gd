@@ -184,18 +184,16 @@ func check_input_mappings():
 
 
 func _on_area_3d_2_body_entered(body: Node3D) -> void:
-	if winbuffer == true:
-		print("You Win!")
-	elif winbuffer == false:
-		winbuffer = true
+	#if winbuffer == true:
+	print("You Win!")
+	$AudioStreamPlayer3.play()
+	#elif winbuffer == false:
+	#	winbuffer = true
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
-	if deathbuffer == true:
-		print("You Die.")
-		$".".position.x = WhereGoWhenDie[0]
-		$".".position.y = WhereGoWhenDie[1]
-		$".".position.z = WhereGoWhenDie[2]
-		$AudioStreamPlayer.play()
-		$AudioStreamPlayer2.play()
-	elif deathbuffer == false:
-		deathbuffer = true
+	print("You Die.")
+	$".".position.x = WhereGoWhenDie[0]
+	$".".position.y = WhereGoWhenDie[1]
+	$".".position.z = WhereGoWhenDie[2]
+	$AudioStreamPlayer.play()
+	$AudioStreamPlayer2.play()
