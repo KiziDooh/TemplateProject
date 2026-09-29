@@ -1,10 +1,10 @@
 [gd_scene format=4 uid="uid://dmwxus2q42hu0"]
 
-[ext_resource type="Material" uid="uid://bxxkkum6j6gxi" path="res://Assets/Materials/Misc/Booth.tres" id="1_kskbp"]
-[ext_resource type="Material" uid="uid://dcrivruftrghe" path="res://Assets/Materials/Misc/TreeBark.tres" id="2_7w0ed"]
-[ext_resource type="Material" uid="uid://b83axr2yy2qvy" path="res://Assets/Materials/Misc/phone.tres" id="3_vjl1i"]
+[ext_resource type="Material" uid="uid://bxxkkum6j6gxi" path="res://Assets/Materials/MadeMaterials/Booth (2).tres" id="1_kskbp"]
+[ext_resource type="Material" uid="uid://dcrivruftrghe" path="res://Assets/Materials/MadeMaterials/TreeBark (2).tres" id="2_7w0ed"]
+[ext_resource type="Material" uid="uid://b83axr2yy2qvy" path="res://Assets/Materials/MadeMaterials/phone (2).tres" id="3_vjl1i"]
 [ext_resource type="Shader" uid="uid://bosm6nrwfxk6k" path="res://Assets/Materials/SpatialShaders/stylized.gdshader" id="4_0brdx"]
-[ext_resource type="Material" uid="uid://ci1bb3tt560yb" path="res://Assets/Materials/Misc/shirt.tres" id="5_jqvm6"]
+[ext_resource type="Material" uid="uid://ci1bb3tt560yb" path="res://Assets/Materials/MadeMaterials/shirt (2).tres" id="5_jqvm6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lcxmy"]
 resource_name = "Material.003"
