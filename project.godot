@@ -12,8 +12,8 @@ config_version=5
 
 config/name="TemplateProject"
 run/main_scene="uid://bal31k36ejjmd"
-config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://Assets/icon.svg"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://Assets/2d/icon.svg"
 
 [input]
 

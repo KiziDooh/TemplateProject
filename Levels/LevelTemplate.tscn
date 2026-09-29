@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bal31k36ejjmd"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Player/proto_controller/proto_controller.tscn" id="1_0bju4"]
-[ext_resource type="Script" uid="uid://bbl5ok05nyq6d" path="res://Player/proto_controller/proto_controller.gd" id="2_t4nej"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n8kpr"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -31,7 +30,6 @@ environment = SubResource("Environment_0bju4")
 
 [node name="ProtoController" parent="Player" unique_id=284608023 instance=ExtResource("1_0bju4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-script = ExtResource("2_t4nej")
 
 [node name="LevelBloxes" type="Node" parent="." unique_id=1519982317]
 
