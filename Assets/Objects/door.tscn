@@ -1,13 +1,13 @@
 [gd_scene format=4 uid="uid://bejh4eymi5uol"]
 
-[ext_resource type="Script" uid="uid://c5h3veavnrqe6" path="res://Scripts/dooropen.gd" id="1_6oae7"]
-[ext_resource type="Texture2D" uid="uid://bbfhg3sb58hpc" path="res://Assets/Resources/Images/door_wooden_gate_diff_4k.jpg" id="3_f28dk"]
-[ext_resource type="Texture2D" uid="uid://0rax0b6qifme" path="res://Assets/Resources/Images/door_wooden_gate_disp_4k-wooden_gate_rough_4k.png" id="4_6oae7"]
-[ext_resource type="Material" uid="uid://nykuekr0va37" path="res://Assets/Resources/Textures/Metal.tres" id="5_4ct0l"]
-[ext_resource type="Material" uid="uid://douq4ygemocfd" path="res://Assets/Resources/Textures/Wood.tres" id="5_f28dk"]
-[ext_resource type="Texture2D" uid="uid://cxh7j6o42kxkl" path="res://Assets/Resources/Images/door_wooden_gate_nor_gl_4k.png" id="5_vj2kf"]
-[ext_resource type="Texture2D" uid="uid://b2eq6wfs0gj6v" path="res://Assets/Resources/Images/door_rock_face_03_disp_4k.png" id="7_6oae7"]
-[ext_resource type="Texture2D" uid="uid://bgkqam1jnloeg" path="res://Assets/Resources/Images/door_rock_face_03_nor_gl_4k.png" id="8_vj2kf"]
+[ext_resource type="Script" path="res://Scripts/dooropen.gd" id="1_6oae7"]
+[ext_resource type="Texture2D" path="res://Assets/Resources/Images/door_wooden_gate_diff_4k.jpg" id="3_f28dk"]
+[ext_resource type="Texture2D" path="res://Assets/Resources/Images/door_wooden_gate_disp_4k-wooden_gate_rough_4k.png" id="4_6oae7"]
+[ext_resource type="Material" uid="uid://nykuekr0va37" path="res://Assets/Materials/MadeMaterials/Metal.tres" id="5_4ct0l"]
+[ext_resource type="Material" uid="uid://douq4ygemocfd" path="res://Assets/Materials/MadeMaterials/Wood.tres" id="5_f28dk"]
+[ext_resource type="Texture2D" path="res://Assets/Resources/Images/door_wooden_gate_nor_gl_4k.png" id="5_vj2kf"]
+[ext_resource type="Texture2D" path="res://Assets/Resources/Images/door_rock_face_03_disp_4k.png" id="7_6oae7"]
+[ext_resource type="Texture2D" path="res://Assets/Resources/Images/door_rock_face_03_nor_gl_4k.png" id="8_vj2kf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ibvbp"]
 resource_name = "Wood"

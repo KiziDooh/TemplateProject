@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://nykuekr0va37"]
+
+[ext_resource type="Texture2D" uid="uid://cdndiq5ba63tc" path="res://Assets/Materials/Textures/metal_0081_color_1k.jpg" id="1_aa704"]
+
+[resource]
+resource_name = "Metal"
+cull_mode = 2
+albedo_texture = ExtResource("1_aa704")
+metallic = 0.92
+roughness = 0.258308
+emission_energy_multiplier = 16.0
+rim = 0.0
+rim_tint = 1.0
+clearcoat_roughness = 1.0
+anisotropy = -1.0
+ao_on_uv2 = true
+backlight_enabled = true
+backlight = Color(0.49027, 0.101237, 0.686994, 1)
+refraction_scale = 1.0
