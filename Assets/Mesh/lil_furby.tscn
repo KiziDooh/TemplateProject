@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://cqmqs1o7edms7"]
 
-[ext_resource type="Material" uid="uid://cm7s43i4ljjdy" path="res://Assets/Textures/Furby_Fur_Purple.tres" id="1_6fjsk"]
-[ext_resource type="Material" uid="uid://d4b64cy7bg5p8" path="res://Assets/Textures/Furby_Fur_White.tres" id="2_h2g5n"]
+[ext_resource type="Material" uid="uid://cm7s43i4ljjdy" path="res://Assets/Materials/MadeMaterials/Furby_Fur_Purple.tres" id="1_6fjsk"]
+[ext_resource type="Material" uid="uid://d4b64cy7bg5p8" path="res://Assets/Materials/MadeMaterials/Furby_Fur_White.tres" id="2_h2g5n"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mxi56"]
 resource_name = "Material.003"

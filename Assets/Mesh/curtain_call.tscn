@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://c0r8jtkei845o"]
 
-[ext_resource type="Texture2D" uid="uid://b8ydfmckvgyv" path="res://Assets/Textures/CurtainCall_wood_table_001_diff_4k.jpg" id="1_mgqer"]
-[ext_resource type="Texture2D" uid="uid://kvqhm4rv8ktx" path="res://Assets/Textures/CurtainCall_CRATE_wooden_gate_diff_4k.jpg" id="2_8mbha"]
+[ext_resource type="Texture2D" uid="uid://b8ydfmckvgyv" path="res://Assets/Materials/Textures/CurtainCall_wood_table_001_diff_4k.jpg" id="1_mgqer"]
+[ext_resource type="Texture2D" uid="uid://kvqhm4rv8ktx" path="res://Assets/Materials/Textures/CurtainCall_CRATE_wooden_gate_diff_4k.jpg" id="2_8mbha"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xcjc5"]
 resource_name = "Material.001"

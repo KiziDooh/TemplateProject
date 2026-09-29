@@ -4,7 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://j6vdaycb1b2e" path="res://Assets/Audio/SFX/VOXScrm_Wilhelm scream (ID 0477)_BigSoundBank.com.wav" id="2_k8ixi"]
 [ext_resource type="AudioStream" uid="uid://5kbdl2gius0k" path="res://Assets/Audio/SFX/edimar_ramide-death2-340040.mp3" id="3_x8a7t"]
 [ext_resource type="AudioStream" uid="uid://h0ahxcwbuxhu" path="res://Assets/Audio/SFX/yippeeeeeeeeeeeeee.mp3" id="4_x8a7t"]
-[ext_resource type="Texture2D" uid="uid://00ruu663hvut" path="res://Assets/2d/Autism.jpg" id="5_f3rqi"]
+[ext_resource type="Texture2D" uid="uid://00ruu663hvut" path="res://Assets/2d/Images/Autism.jpg" id="5_f3rqi"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)

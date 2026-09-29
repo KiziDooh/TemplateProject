@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://d4b64cy7bg5p8"]
+
+[ext_resource type="Shader" uid="uid://burhf242an7yj" path="res://Assets/Materials/SpatialShaders/Fur2.gdshader" id="1_ovuam"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8dap7"]
+load_path = "res://.godot/imported/Furb.webp-094cb11626b0c628f51d8f686a51717b.s3tc.ctex"
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_l6ksc"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ovuam")
+shader_parameter/fur_length = -0.125
+shader_parameter/current_layer = -0.355
+shader_parameter/noise_tex = SubResource("NoiseTexture2D_l6ksc")
+shader_parameter/fur_texture = SubResource("CompressedTexture2D_8dap7")
+shader_parameter/fur_color = Color(1, 1, 1, 1)
+shader_parameter/texture_strength = 0.49
+shader_parameter/max_fur_distance = 19.61
+shader_parameter/fade_start_distance = 15.0
+shader_parameter/wind_strength = 0.08400000399
+shader_parameter/wind_speed = 0.4510000214225
