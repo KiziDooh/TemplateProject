@@ -1,0 +1,32 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dcrivruftrghe"]
+
+[ext_resource type="Shader" uid="uid://bosm6nrwfxk6k" path="res://Assets/Materials/SpatialShaders/stylized.gdshader" id="1_wwisq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5hng5"]
+render_priority = 1
+shader = ExtResource("1_wwisq")
+shader_parameter/albedo_color = Color(0.32941177, 0.21960784, 0.14901961, 1)
+shader_parameter/albedo_affect = 0.0
+shader_parameter/use_stepped = true
+shader_parameter/steps = 3.0
+shader_parameter/step_smoothness = 0.0
+shader_parameter/shadow_tint = Color(0, 0, 0, 1)
+shader_parameter/shadow_tint_amount = 0.4
+shader_parameter/specular = 0.0
+shader_parameter/normal_strength = 0.0
+shader_parameter/use_rim = true
+shader_parameter/rim_color = Color(1, 1, 1, 1)
+shader_parameter/rim_amount = 2.0
+shader_parameter/rim_smoothness = 0.2
+shader_parameter/rim_mask_shadow = 1.0
+shader_parameter/rim_blend = 1.0
+shader_parameter/use_pattern = true
+shader_parameter/pattern_uv_mode = 2
+shader_parameter/pattern_tiling = 32.0
+shader_parameter/pattern_amount = 0.5
+shader_parameter/pattern_smoothness = 0.5
+shader_parameter/pattern_blend = 0.2
+
+[resource]
+next_pass = SubResource("ShaderMaterial_5hng5")
+albedo_color = Color(0.32918406, 0.2206263, 0.1484375, 1)
