@@ -4,6 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://j6vdaycb1b2e" path="res://Assets/Audio/SFX/VOXScrm_Wilhelm scream (ID 0477)_BigSoundBank.com.wav" id="2_k8ixi"]
 [ext_resource type="AudioStream" uid="uid://5kbdl2gius0k" path="res://Assets/Audio/SFX/edimar_ramide-death2-340040.mp3" id="3_x8a7t"]
 [ext_resource type="AudioStream" uid="uid://h0ahxcwbuxhu" path="res://Assets/Audio/SFX/yippeeeeeeeeeeeeee.mp3" id="4_x8a7t"]
+[ext_resource type="Texture2D" uid="uid://00ruu663hvut" path="res://Assets/2d/Autism.jpg" id="5_f3rqi"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -43,3 +44,22 @@ stream = ExtResource("3_x8a7t")
 
 [node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="." unique_id=2099252925]
 stream = ExtResource("4_x8a7t")
+
+[node name="Autism" type="Sprite2D" parent="." unique_id=767106491]
+visible = false
+position = Vector2(106.999985, 553)
+rotation = 0.30599546
+scale = Vector2(0.29625, 0.3)
+texture = ExtResource("5_f3rqi")
+
+[node name="Autism2" type="Sprite2D" parent="." unique_id=522974459]
+visible = false
+position = Vector2(1051, 553)
+rotation = -0.42182142
+scale = Vector2(0.3180769, 0.34930113)
+texture = ExtResource("5_f3rqi")
+
+[node name="Timer" type="Timer" parent="." unique_id=1040049080]
+wait_time = 1.6999999999999997
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

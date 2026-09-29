@@ -187,8 +187,11 @@ func _on_area_3d_2_body_entered(body: Node3D) -> void:
 	#if winbuffer == true:
 	print("You Win!")
 	$AudioStreamPlayer3.play()
+	$Autism.visible = true
+	$Autism2.visible = true
 	#elif winbuffer == false:
 	#	winbuffer = true
+	$Timer.start()
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	print("You Die.")
@@ -197,3 +200,8 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 	$".".position.z = WhereGoWhenDie[2]
 	$AudioStreamPlayer.play()
 	$AudioStreamPlayer2.play()
+
+
+func _on_timer_timeout() -> void:
+	$Autism.visible = false
+	$Autism2.visible = false
