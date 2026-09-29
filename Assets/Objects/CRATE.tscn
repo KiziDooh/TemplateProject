@@ -1,9 +1,7 @@
 [gd_scene format=4 uid="uid://bq8rco55ugg2x"]
 
 [ext_resource type="Material" uid="uid://nykuekr0va37" path="res://Assets/Materials/MadeMaterials/Metal.tres" id="1_1y6jt"]
-[ext_resource type="Texture2D" path="res://Assets/Resources/Images/CRATE_wooden_gate_diff_4k.jpg" id="1_k5i3e"]
-[ext_resource type="Texture2D" path="res://Assets/Resources/Images/CRATE_wooden_gate_disp_4k-wooden_gate_rough_4k.png" id="2_1y6jt"]
-[ext_resource type="Texture2D" path="res://Assets/Resources/Images/CRATE_wooden_gate_nor_gl_4k.png" id="3_k5ajd"]
+[ext_resource type="Texture2D" uid="uid://dgurf3vire718" path="res://Assets/Materials/Textures/CRATE_wooden_gate_diff_4k.jpg" id="2_qtcek"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l654p"]
 resource_name = "Metal"
@@ -44,17 +42,16 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_4qfw2")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_875xf"]
+albedo_texture = ExtResource("2_qtcek")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_if7iy"]
 resource_name = "Wood"
 cull_mode = 2
-albedo_texture = ExtResource("1_k5i3e")
 metallic = 1.0
-metallic_texture = ExtResource("2_1y6jt")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("2_1y6jt")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("3_k5ajd")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2ekrg"]
 _surfaces = [{
@@ -97,19 +94,16 @@ _data = {
 &"CubeAction": SubResource("Animation_c618a")
 }
 
-[node name="CRATE" type="Node3D"]
+[node name="CRATE" type="Node3D" unique_id=490749487]
 
-[node name="Cube" type="MeshInstance3D" parent="."]
+[node name="Cube" type="MeshInstance3D" parent="." unique_id=1095220168]
 material_override = ExtResource("1_1y6jt")
 mesh = SubResource("ArrayMesh_xskq5")
-skeleton = NodePath("")
 
-[node name="Cube_001" type="MeshInstance3D" parent="."]
+[node name="Cube_001" type="MeshInstance3D" parent="." unique_id=532695580]
 transform = Transform3D(0.996552, 0, 0, 0, 0.996552, 0, 0, 0, 0.996552, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_875xf")
 mesh = SubResource("ArrayMesh_spaqx")
-skeleton = NodePath("")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_m1tjg")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=901372025]
+libraries/ = SubResource("AnimationLibrary_m1tjg")

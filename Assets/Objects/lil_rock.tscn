@@ -1,7 +1,6 @@
 [gd_scene format=4 uid="uid://brlp4if4q038l"]
 
-[ext_resource type="Material" path="res://Assets/Materials/silver.tres" id="1_u8er4"]
-
+[ext_resource type="Material" uid="uid://bg1r6o0kcmk6t" path="res://Assets/Materials/MadeMaterials/Rock.tres" id="1_n3csk"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_iwah7"]
 _surfaces = [{
@@ -25,7 +24,6 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 132,
 "index_data": PackedByteArray("OgANAEMAOgAEAA0AUwBHAFsAUwA3AEcAVAARACQAVAA9ABEACwAvABcACwAfAC8AIABdACkAIABMAF0AAgAIAAYADgAUABIAGgAiABwAJgAsACoAMQA4ADQAPgBEAEEASgBQAE4AVgBeAFgAGwAJAAMAGwAdAAkABwAWAA8ABwAKABYAEwAtACcAEwAVAC0AKwAeACMAKwAuAB4ASQAhABkASQBNACEAJQBcAFUAJQAoAFwAWQBPAFEAWQBfAE8AMgBSAEsAMgA2AFIAVwBFAD8AVwBaAEUAQgA1ADkAQgBGADUAAQA7ADMAAQAFADsAPAAMABAAPABAAAwAGAAwAEgAGAAAADAA"),
-"material": ExtResource("1_u8er4"),
 "name": "Material.001",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -39,4 +37,5 @@ shadow_mesh = SubResource("ArrayMesh_iwah7")
 
 [node name="Rock5" type="MeshInstance3D" parent="." unique_id=1859275419]
 transform = Transform3D(0.1, 0, 0, 0, 0.0919201, -0.0393788, 0, 0.0393788, 0.0919201, 0, 0, 0)
+material_override = ExtResource("1_n3csk")
 mesh = SubResource("ArrayMesh_vdpx5")
