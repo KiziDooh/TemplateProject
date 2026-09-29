@@ -45,10 +45,13 @@ stream = ExtResource("3_x8a7t")
 [node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="." unique_id=2099252925]
 stream = ExtResource("4_x8a7t")
 
+[node name="Timer" type="Timer" parent="." unique_id=1040049080]
+wait_time = 1.6999999999999995
+
 [node name="Autism" type="Sprite2D" parent="." unique_id=767106491]
 visible = false
 position = Vector2(106.999985, 553)
-rotation = 0.30599546
+rotation = 0.3059955
 scale = Vector2(0.29625, 0.3)
 texture = ExtResource("5_f3rqi")
 
@@ -58,8 +61,5 @@ position = Vector2(1051, 553)
 rotation = -0.42182142
 scale = Vector2(0.3180769, 0.34930113)
 texture = ExtResource("5_f3rqi")
-
-[node name="Timer" type="Timer" parent="." unique_id=1040049080]
-wait_time = 1.6999999999999997
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
