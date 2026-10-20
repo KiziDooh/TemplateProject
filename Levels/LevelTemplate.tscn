@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Player/proto_controller/proto_controller.tscn" id="1_0bju4"]
 [ext_resource type="PackedScene" uid="uid://mpq61uxfoe2u" path="res://Assets/Mesh/a_flag.tscn" id="2_0bju4"]
+[ext_resource type="PackedScene" uid="uid://dcvf6i0p4ny4w" path="res://Assets/Objects/heart.tscn" id="3_ersrp"]
+[ext_resource type="PackedScene" uid="uid://su6egbb2dfxy" path="res://Assets/Objects/freddyfastbear.tscn" id="4_kv2lc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n8kpr"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -38,6 +40,12 @@ density_texture = SubResource("NoiseTexture3D_0bju4")
 height = 6.001465
 radius = 2.5805664
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_qe08j"]
+radius = 4.9412613
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4ey17"]
+radius = 2.7375505
+
 [node name="LevelTemplate" type="Node3D" unique_id=866513368]
 
 [node name="Enviroment" type="Node" parent="." unique_id=652837666]
@@ -57,8 +65,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 [node name="LevelBloxes" type="Node" parent="." unique_id=1519982317]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="LevelBloxes" unique_id=2017905113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.0722656)
 use_collision = true
-size = Vector3(19.579102, 1, 10)
+size = Vector3(19.579102, 1, 18.144531)
 
 [node name="DeathZones" type="Node" parent="." unique_id=1872134168]
 
@@ -101,6 +110,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4976435, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WinZone/WinFlag/a_flag/Area3D2" unique_id=551022118]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8779573, 0)
 shape = SubResource("CylinderShape3D_qe08j")
+
+[node name="Things" type="Node" parent="." unique_id=576850207]
+
+[node name="heart" parent="." unique_id=556501948 instance=ExtResource("3_ersrp")]
+transform = Transform3D(0.385, 0, 0, 0, 0.385, 0, 0, 0, 0.385, -2.00633, 0.80269766, -10.373916)
+
+[node name="Heart" type="Area3D" parent="heart" unique_id=979079869]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="heart/Heart" unique_id=1751596120]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 1.2312632, 2.4303126, 0)
+shape = SubResource("SphereShape3D_qe08j")
+
+[node name="freddyfastbear" parent="." unique_id=1360302515 instance=ExtResource("4_kv2lc")]
+transform = Transform3D(-0.93006486, 0, 0.167345, 0, 0.945, 0, -0.167345, 0, -0.93006486, 5.9916515, 4.172827, -11.05953)
+
+[node name="Bear" type="Area3D" parent="freddyfastbear" unique_id=1753067396]
+transform = Transform3D(1, 0, 1.4901161e-08, 0, 1, 0, -1.4901161e-08, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="freddyfastbear/Bear" unique_id=1877782645]
+transform = Transform3D(1, 0, 1.4901161e-08, 0, 1, 0, -1.4901161e-08, 0, 1, 0, -0.75315976, 0)
+shape = SubResource("SphereShape3D_4ey17")
 
 [connection signal="body_entered" from="DeathZones/DeathZone1/FogVolume/Area3D" to="Player/ProtoController" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="DeathZones/Void/FogVolume/Area3D" to="Player/ProtoController" method="_on_area_3d_body_entered"]
