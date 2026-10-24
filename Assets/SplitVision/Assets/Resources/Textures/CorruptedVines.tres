@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b6jj2t7govc4l"]
-
-[ext_resource type="Material" uid="uid://cdw43thckljux" path="res://Assets/Resources/Textures/red.tres" id="1_8e2xx"]
-
-[resource]
-next_pass = ExtResource("1_8e2xx")
-shading_mode = 0
-disable_fog = true
-albedo_color = Color(0.392157, 0, 0, 1)
