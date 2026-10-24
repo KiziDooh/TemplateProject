@@ -1,0 +1,89 @@
+[gd_scene format=4 uid="uid://bs01m7gg42a68"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h1ukr"]
+resource_name = "Material.002"
+cull_mode = 2
+albedo_color = Color(0.46666178, 0.46666178, 0.46666178, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5od20"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -0.6153787, 2, 2.5922456, 1.2307574),
+"format": 34359742465,
+"index_count": 66,
+"index_data": PackedByteArray("AAAEAAUAAAABAAQAAQAAAAMAAwAAAAUAAQADAAYAAwAFAAYAAQAGAAQABQAHAAYABgAIAAQABgAHAAgABAAJAAUABQAJAAcABAAIAAkABwAKAAgACAALAAkACAAKAAsACQAMAAcABwAMAAoACQALAAwACgACAAsACwACAAwADAACAAoA"),
+"lods": [0.19450408, PackedByteArray("AAAEAAUABAACAAUAAwAAAAUAAAABAAQAAQAAAAMAAQAGAAQABgACAAQAAQADAAYABQACAAYAAwAFAAYA"), 1.5623293, PackedByteArray("AAABAAIAAQADAAIAAwAAAAIAAQAAAAMA")],
+"name": "Material.002",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 13,
+"vertex_data": PackedByteArray("AACAvwAAgL91iR0/AACAvwAAgL91iR2/kX11v7XOyz/qtoo8AACAPwAAgL8AAACAAACAvwEAgD9wD6W+AACAvwEAgD9wD6U+AACAPwAAgD8AAACAJMf1PrtoqD8AAACAAACAv71oqD8N3kq+AACAv71oqD8N3ko+dKF3vzSovz+oF6O9dKF3vzSovz+oF6M94rStvjKovz8AAACA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_a3sbg"]
+resource_name = "knife_Cube"
+_surfaces = [{
+"aabb": AABB(-1, -1, -0.6153787, 2, 2.5922456, 1.2307574),
+"attribute_data": PackedByteArray("AADAPgAAgD8AAMA+AABAPwAAID8AAEA/AADAPgAAQD8AAMA+AAAAPwAAID8AAAA/AADAPgAAgD4AAMA+AAAAAAAAID8AAAAAAAAAPgAAAD8AAAA+AACAPgAAwD4AAIA+AAAgPwAAQD8AACA/AACAPwAAID8AAAA/AAAgPwAAQD8AACA/AAAAAAAAID8AAIA+AAAgPwAAgD8AACA/AABAPwAAID8AAIA/AAAgPwAAQD8AACA/AABAPwAAID8AAAA/AAAgPwAAQD8AACA/AAAAPwAAID8AAIA+AAAgPwAAAAAAACA/AACAPgAAID8AAAAA"),
+"format": 34359742487,
+"index_count": 66,
+"index_data": PackedByteArray("AAAMAA0AAAABAAwADAASAA0ADAATABIAEwAUABIAEwAVABQAFQACABQAAwAOAA8AAwAEAA4ADgAWAA8ADgAXABYAFwAYABYAFwAZABgAGQAFABgABgAQABEABgAHABAAEAAaABEAEAAbABoAGwAcABoAGwAdABwAHQAIABwACQAKAAsA"),
+"lods": [0.19450408, PackedByteArray("AAAMAA0ADAACAA0AAAABAAwAAwAOAA8ADgAFAA8AAwAEAA4ABgAQABEAEAAIABEABgAHABAACQAKAAsA"), 1.5623293, PackedByteArray("AAABAAIAAwAEAAUABgAHAAgACQAKAAsA")],
+"material": SubResource("StandardMaterial3D_h1ukr"),
+"name": "Material.002",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 30,
+"vertex_data": PackedByteArray("AACAvwAAgL91iR0/AACAvwAAgL91iR2/kX11v7XOyz/qtoo8AACAvwAAgL91iR2/AACAPwAAgL8AAACAkX11v7XOyz/qtoo8AACAPwAAgL8AAACAAACAvwAAgL91iR0/kX11v7XOyz/qtoo8AACAvwAAgL91iR2/AACAvwAAgL91iR0/AACAPwAAgL8AAACAAACAvwEAgD9wD6W+AACAvwEAgD9wD6U+AACAPwAAgD8AAACAAACAvwEAgD9wD6W+AACAvwEAgD9wD6U+AACAPwAAgD8AAACAAACAv71oqD8N3ko+AACAv71oqD8N3kq+dKF3vzSovz+oF6M9dKF3vzSovz+oF6O9AACAv71oqD8N3kq+JMf1PrtoqD8AAACAdKF3vzSovz+oF6O94rStvjKovz8AAACAJMf1PrtoqD8AAACAAACAv71oqD8N3ko+4rStvjKovz8AAACAdKF3vzSovz+oF6M9AAD/f/9/6foAAP9//3/Q91sKW4r///8/1PgL6eOBivrU+Avp/H+g+5zDY/j///8/8pYqh0F3/f/yliqH6IoM/yGJzK7///8//38AAP//Ds//fwAA//8Oz/9/AAD//w7PAAD/f7qF//8AAP9/W5D///zy2uvsfDX3TO4Y7rl97/TlkbKR4Gnc/iSUAo1tbnX+TQdNh////z9NB02H////P8MQwpD///8/MxEykf///z8c3Iz0////P4HiSfP///8/Msw99////z8C0nj2////P7SMfZ3///8/covio////z+kiQGt////P2+JvK3///8/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_5od20")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63ped"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_color = Color(0.3333257, 0.23630378, 0.103709474, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_inhwx"]
+_surfaces = [{
+"aabb": AABB(-0.33940786, -1, -0.34813637, 0.6788157, 2, 0.6617964),
+"format": 34896613377,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIABQADAAAABQACAAYAAwAHAAQACAAFAAYACAADAAUAAgAJAAYACAAGAAkACgACAAQABwAKAAQAAgAKAAkAAwALAAcAAwAIAAsABwALAAoADAAIAAkACwAIAAwADAAJAA0ACwAMAA0ACQAKAA0ACwANAAoA"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 14,
+"vertex_data": PackedByteArray("/38AAAAAAADQw///MU8AAP9///+yLQAApOYAALQyAACP1P//dpoAAFoZAAC0MgAALjz//zFPAAD//wAAoaQAAAAAAAChpAAAbyv//3aaAAChpf//0tYAAPa4AAD//wAACEcAAP//AABdWv//0tYAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nalon"]
+resource_name = "knife_Cylinder"
+_surfaces = [{
+"aabb": AABB(-0.33940786, -1, -0.34813637, 0.6788157, 2, 0.6617964),
+"attribute_data": PackedByteArray("////f2zbAAD//wAAbNv/f2zb/3/atgAAbNsAANq2/3/atv9/SJIAANq2AABIkv9/SJL/f7ZtAABIkgAAtm3/f7Zt/38kSQAAtm0AACRJ/3/le6vN/z+OgghwsJmoWlr3GQSrzVclWvf2D7CZJEn/f5IkAAAkSQAAkiT/f5Ik/38AAAAAkiQAAAAA/3/2j7CZCPCwmf+/joIZhKvNp9pa91alWvfl+6vN"),
+"format": 34896613399,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFwAVABQAFQAXABgAGAAXABkAFQAYABoAGwAcAB0AGwAeABwAHwAgACEAHwAiACAAIwAkACUAJgAkACMAJAAmACcAJwAmACgAJAAnACkA"),
+"material": SubResource("StandardMaterial3D_63ped"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 42,
+"vertex_data": PackedByteArray("/38AAAAAt+3Qw///MU+37f9///+yLbftpOYAALQyt+2k5gAAtDIpyY/U//92minJ0MP//zFPKcn//wAAoaQpyf//AAChpKCkoaX//9LWoKSP1P//dpqgpPa4AAD//6Ck9rgAAP//KYJdWv//0tYpgqGl///S1imCCEcAAP//KYIIRwAA//+gpG8r//92mqCkXVr//9LWoKQAAAAAoaSgpI/U//92mv+//3///7It/7/Qw///MU//v6Gl///S1v+/byv//3aa/79dWv//0tb/vy48//8xT/+/AAAAAKGkKckuPP//MU8pyW8r//92minJWhkAALQyKclaGQAAtDK37f9///+yLbftLjz//zFPt+3/fwAAAAC37VoZAAC0Mv8/pOYAALQy/z//fwAAAAD/PwAAAAChpP8/9rgAAP///z8IRwAA////P///AAChpP8/CoTAAAqEwAAKhMAACoTAANSFlgLUhZYC1IWWAtSFlgKriYcGq4mHBquJhwariYcG////f////3////9/////f4aGUvaGhlL2hoZS9oaGUvb///9/////f////3////9/////f////3////9/loIp+paCKfqWgin6loIp+r+A8/u/gPP7v4Dz+7+A8/sAAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_inhwx")
+
+[node name="knife" type="Node3D" unique_id=338069931]
+
+[node name="Cube" type="MeshInstance3D" parent="." unique_id=502291044]
+transform = Transform3D(0.49824202, 0, 0, 0, 2.0296261, 0, 0, 0, 0.34033942, 0.20431158, 2.9299092, 0)
+mesh = SubResource("ArrayMesh_a3sbg")
+
+[node name="Cylinder" type="MeshInstance3D" parent="." unique_id=681170529]
+transform = Transform3D(0.64277256, 0, 0, 0, 0.64277256, 0, 0, 0, 0.64277256, -0.072961554, 0.3720406, 0)
+mesh = SubResource("ArrayMesh_nalon")

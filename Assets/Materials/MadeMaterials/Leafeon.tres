@@ -1,0 +1,27 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://pw7fjhcbpy3o"]
+
+[ext_resource type="Texture2D" path="res://Game/Image/Vegetation (37).png" id="1_b3rst"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ug87y"]
+
+[resource]
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.8227, 0.95, 0.3135, 1)
+albedo_texture = ExtResource("1_b3rst")
+metallic_specular = 0.16
+metallic_texture_channel = 1
+roughness_texture_channel = 1
+rim = 0.08
+rim_tint = 1.0
+anisotropy_enabled = true
+anisotropy = 1.0
+refraction_scale = 0.1
+refraction_texture = SubResource("NoiseTexture2D_ug87y")
+refraction_texture_channel = 1
+uv1_scale = Vector3(20.035, 20.035, 20.035)
+uv1_triplanar_sharpness = 139.955
+uv1_world_triplanar = true
+grow_amount = 1.535
+distance_fade_mode = 2
+distance_fade_max_distance = 1.0

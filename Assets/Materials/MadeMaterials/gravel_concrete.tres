@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dcqfwbjgpfxkp"]
+
+[ext_resource type="Texture2D" uid="uid://b5hagmnxgmlnx" path="res://Assets/Materials/Textures/poduim_gravel_concrete_03_diff.jpg" id="1_hs1nn"]
+[ext_resource type="Texture2D" uid="uid://bkyacr7i6oe4g" path="res://Assets/Materials/Textures/poduim_gravel_concrete_03_rough.png" id="2_1atom"]
+[ext_resource type="Texture2D" uid="uid://ckx40a46cu71i" path="res://Assets/Materials/Textures/poduim_gravel_concrete_03_nor_gl.png" id="3_nq30x"]
+
+[resource]
+resource_name = "gravel_concrete_03"
+cull_mode = 2
+albedo_texture = ExtResource("1_hs1nn")
+metallic_texture = ExtResource("2_1atom")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_1atom")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_nq30x")

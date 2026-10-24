@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bafecv62ip87x"]
+
+[ext_resource type="Shader" uid="uid://cpe06yq0q5uxf" path="res://Assets/Materials/watch.gdshader" id="1_bjqaj"]
+[ext_resource type="Texture2D" uid="uid://cbo3albgxhmtt" path="res://Assets/Materials/new_viewport_texture.tres" id="2_0h6u8"]
+
+[resource]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_bjqaj")
+shader_parameter/refl_tx = ExtResource("2_0h6u8")

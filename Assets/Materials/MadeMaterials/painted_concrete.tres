@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://f4157rl7kgn7"]
+
+[ext_resource type="Texture2D" uid="uid://cpsmtaur2y5ar" path="res://Assets/Materials/Textures/poduim_painted_concrete_02_diff.jpg" id="1_m7dhc"]
+[ext_resource type="Texture2D" uid="uid://c851bi0fo51wu" path="res://Assets/Materials/Textures/poduim_painted_concrete_02_rough.png" id="2_d43u5"]
+[ext_resource type="Texture2D" uid="uid://b25u3nt7fngbm" path="res://Assets/Materials/Textures/poduim_painted_concrete_02_nor_gl.png" id="3_jjr4f"]
+
+[resource]
+resource_name = "painted_concrete_02"
+cull_mode = 2
+albedo_texture = ExtResource("1_m7dhc")
+metallic_texture = ExtResource("2_d43u5")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_d43u5")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_jjr4f")

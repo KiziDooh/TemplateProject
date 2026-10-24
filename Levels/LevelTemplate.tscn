@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://bal31k36ejjmd"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Player/proto_controller/proto_controller.tscn" id="1_0bju4"]
-[ext_resource type="Script" uid="uid://bbl5ok05nyq6d" path="res://Player/proto_controller/proto_controller.gd" id="2_t4nej"]
+[ext_resource type="PackedScene" uid="uid://mpq61uxfoe2u" path="res://Assets/Mesh/a_flag.tscn" id="2_0bju4"]
+[ext_resource type="PackedScene" uid="uid://dcvf6i0p4ny4w" path="res://Assets/Objects/heart.tscn" id="3_ersrp"]
+[ext_resource type="PackedScene" uid="uid://su6egbb2dfxy" path="res://Assets/Objects/freddyfastbear.tscn" id="4_kv2lc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n8kpr"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -15,6 +17,34 @@ background_mode = 2
 sky = SubResource("Sky_bsrj8")
 tonemap_mode = 2
 glow_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0
+
+[sub_resource type="NoiseTexture3D" id="NoiseTexture3D_0bju4"]
+
+[sub_resource type="FogMaterial" id="FogMaterial_qe08j"]
+density = 3.395
+albedo = Color(0.50996894, 0.1299876, 0.19623694, 1)
+density_texture = SubResource("NoiseTexture3D_0bju4")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qe08j"]
+size = Vector3(5.0341797, 3.449463, 3.7480469)
+
+[sub_resource type="FogMaterial" id="FogMaterial_t4nej"]
+density = 3.395
+albedo = Color(0.2, 0.16862746, 0.13333334, 1)
+emission = Color(0.2, 0.16862746, 0.13333334, 1)
+density_texture = SubResource("NoiseTexture3D_0bju4")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_qe08j"]
+height = 6.001465
+radius = 2.5805664
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qe08j"]
+radius = 4.9412613
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4ey17"]
+radius = 2.7375505
 
 [node name="LevelTemplate" type="Node3D" unique_id=866513368]
 
@@ -31,10 +61,77 @@ environment = SubResource("Environment_0bju4")
 
 [node name="ProtoController" parent="Player" unique_id=284608023 instance=ExtResource("1_0bju4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-script = ExtResource("2_t4nej")
 
 [node name="LevelBloxes" type="Node" parent="." unique_id=1519982317]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="LevelBloxes" unique_id=2017905113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.0722656)
 use_collision = true
-size = Vector3(10, 1, 10)
+size = Vector3(19.579102, 1, 18.144531)
+
+[node name="DeathZones" type="Node" parent="." unique_id=1872134168]
+
+[node name="DeathZone1" type="Node3D" parent="DeathZones" unique_id=1784299428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.420448, 2.3561826, 0)
+
+[node name="FogVolume" type="FogVolume" parent="DeathZones/DeathZone1" unique_id=942473399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021591187, 0.726346, 0)
+size = Vector3(5.3027344, 3.7458496, 4.373047)
+material = SubResource("FogMaterial_qe08j")
+
+[node name="Area3D" type="Area3D" parent="DeathZones/DeathZone1/FogVolume" unique_id=1030104956]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeathZones/DeathZone1/FogVolume/Area3D" unique_id=1840810314]
+shape = SubResource("BoxShape3D_qe08j")
+
+[node name="Void" type="Node3D" parent="DeathZones" unique_id=1244306085]
+transform = Transform3D(37.941883, 0, 0, 0, 1, 0, 0, 0, 28.79139, 0, -22.543007, 0)
+
+[node name="FogVolume" type="FogVolume" parent="DeathZones/Void" unique_id=1423760720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2544241, 1.696393, 0)
+size = Vector3(5.3027344, 3.7458496, 4.373047)
+material = SubResource("FogMaterial_t4nej")
+
+[node name="Area3D" type="Area3D" parent="DeathZones/Void/FogVolume" unique_id=887719206]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeathZones/Void/FogVolume/Area3D" unique_id=322741304]
+shape = SubResource("BoxShape3D_qe08j")
+
+[node name="WinZone" type="Node" parent="." unique_id=289184070]
+
+[node name="WinFlag" type="Node3D" parent="WinZone" unique_id=1872009630]
+
+[node name="a_flag" parent="WinZone/WinFlag" unique_id=704038764 instance=ExtResource("2_0bju4")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.872511, 0.72400856, 0.7506566)
+
+[node name="Area3D2" type="Area3D" parent="WinZone/WinFlag/a_flag" unique_id=130696681]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4976435, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WinZone/WinFlag/a_flag/Area3D2" unique_id=551022118]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8779573, 0)
+shape = SubResource("CylinderShape3D_qe08j")
+
+[node name="Things" type="Node" parent="." unique_id=576850207]
+
+[node name="heart" parent="." unique_id=556501948 instance=ExtResource("3_ersrp")]
+transform = Transform3D(0.385, 0, 0, 0, 0.385, 0, 0, 0, 0.385, -2.00633, 0.80269766, -10.373916)
+
+[node name="Heart" type="Area3D" parent="heart" unique_id=979079869]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="heart/Heart" unique_id=1751596120]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 1.2312632, 2.4303126, 0)
+shape = SubResource("SphereShape3D_qe08j")
+
+[node name="freddyfastbear" parent="." unique_id=1360302515 instance=ExtResource("4_kv2lc")]
+transform = Transform3D(-0.93006486, 0, 0.167345, 0, 0.945, 0, -0.167345, 0, -0.93006486, 5.9916515, 4.172827, -11.05953)
+
+[node name="Bear" type="Area3D" parent="freddyfastbear" unique_id=1753067396]
+transform = Transform3D(1, 0, 1.4901161e-08, 0, 1, 0, -1.4901161e-08, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="freddyfastbear/Bear" unique_id=1877782645]
+transform = Transform3D(1, 0, 1.4901161e-08, 0, 1, 0, -1.4901161e-08, 0, 1, 0, -0.75315976, 0)
+shape = SubResource("SphereShape3D_4ey17")
+
+[connection signal="body_entered" from="DeathZones/DeathZone1/FogVolume/Area3D" to="Player/ProtoController" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="DeathZones/Void/FogVolume/Area3D" to="Player/ProtoController" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="WinZone/WinFlag/a_flag/Area3D2" to="Player/ProtoController" method="_on_area_3d_2_body_entered"]

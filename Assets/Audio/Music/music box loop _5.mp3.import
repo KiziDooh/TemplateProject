@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bghr658af5g84"
+path="res://.godot/imported/music box loop _5.mp3-273058ee21ca2267ac72515940051a39.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/music box loop _5.mp3"
+dest_files=["res://.godot/imported/music box loop _5.mp3-273058ee21ca2267ac72515940051a39.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
